@@ -6,7 +6,7 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 13:10:44 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/14 13:15:54 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/14 23:53:29 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,15 @@
 # include <sys/types.h>
 # include <unistd.h>
 # include <stdlib.h>
+
+int	ft_atoi(const char *nptr);
+int	ft_strlen(char *str);
+
+typedef struct s_bit
+{
+	int					size;
+	int					c;
+	int					n;
+}				t_bit;
 
 #endif

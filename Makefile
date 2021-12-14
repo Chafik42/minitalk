@@ -6,12 +6,14 @@
 #    By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/14 13:04:14 by cmarouf           #+#    #+#              #
-#    Updated: 2021/12/14 13:49:12 by cmarouf          ###   ########.fr        #
+#    Updated: 2021/12/14 18:26:57 by cmarouf          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 CLIENT		= srcs/client.c
 
 SERVER		= srcs/server.c
+
+UTILS		= srcs/utils.c
 
 RM 			= rm -f
 
@@ -29,7 +31,7 @@ all:		$(NAME)
 
 $(NAME):
 					make -C ./ft_printf
-					${CC} ${CFLAGS} -g ${CLIENT} ${PRINTFLIB} -o ${NAME}
+					${CC} ${CFLAGS} -g ${CLIENT} ${UTILS} ${PRINTFLIB} -o ${NAME}
 					${CC} ${CFLAGS} -g ${SERVER} ${PRINTFLIB} -o ${NAME2}
 
 clean:
