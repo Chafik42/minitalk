@@ -1,32 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/14 13:10:44 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/15 00:22:03 by cmarouf          ###   ########.fr       */
+/*   Created: 2021/12/15 00:32:50 by cmarouf           #+#    #+#             */
+/*   Updated: 2021/12/15 00:34:46 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#ifndef MINITALK_H
-# define MINITALK_H
-
-# include "../ft_printf/ft_printf.h"
-# include <signal.h>
-# include <sys/types.h>
-# include <unistd.h>
-# include <stdlib.h>
-
-int	ft_atoi(const char *nptr);
-int	ft_strlen(char *str);
-
-typedef struct s_bit
+#include <stdio.h>
+#include <stdlib.h>
+int	main(int ac, char **av)
 {
-	int					size;
-	wchar_t				c;
-	int					n;
-}				t_bit;
-
-#endif
+	printf("%lu\n", sizeof(av[1][0]));
+}

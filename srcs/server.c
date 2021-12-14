@@ -6,7 +6,7 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:58:26 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/14 23:51:32 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/15 00:30:55 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/minitalk.h"
@@ -27,7 +27,7 @@ void	decrypting(int bit)
 {
 	binary_to_ascii(bit);
 	g_bit.size++;
-	if (g_bit.size == 7)
+	if (g_bit.size == 31)
 	{
 		write(1, &g_bit.c, 1);
 		if (!g_bit.c)

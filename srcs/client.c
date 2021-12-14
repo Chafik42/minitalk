@@ -6,7 +6,7 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 13:14:28 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/14 23:15:15 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/15 00:30:52 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/minitalk.h"
@@ -20,7 +20,7 @@ void	encrypting(int pid, unsigned char *msg, int len)
 	while (i <= len)
 	{
 		decalage = 0;
-		while (decalage < 7)
+		while (decalage < 31)
 		{
 			if ((msg[i] >> decalage) & 1)
 				kill(pid, SIGUSR2);
@@ -29,6 +29,7 @@ void	encrypting(int pid, unsigned char *msg, int len)
 			decalage++;
 			usleep(70);
 		}
+		ft_printf("%d", (msg[i] >> decalage) & 1);
 		i++;
 	}
 }
