@@ -6,7 +6,7 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 13:14:28 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/15 00:30:52 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/15 17:36:21 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/minitalk.h"
@@ -27,9 +27,8 @@ void	encrypting(int pid, unsigned char *msg, int len)
 			else
 				kill(pid, SIGUSR1);
 			decalage++;
-			usleep(70);
+			usleep(50);
 		}
-		ft_printf("%d", (msg[i] >> decalage) & 1);
 		i++;
 	}
 }

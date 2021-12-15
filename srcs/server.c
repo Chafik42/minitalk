@@ -6,7 +6,7 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:58:26 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/15 00:30:55 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/15 17:34:58 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/minitalk.h"
@@ -15,7 +15,7 @@ static t_bit g_bit;
 
 void	binary_to_ascii(int bit)
 {
-	if (bit == 12)
+	if (bit == 31)
 		g_bit.c += g_bit.n;
 	if (g_bit.n == 1)
 		g_bit.n = 2;
