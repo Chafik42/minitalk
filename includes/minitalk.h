@@ -6,7 +6,7 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 13:10:44 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/16 01:06:48 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/16 17:17:54 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 int		ft_atoi(const char *nptr);
 char	*ft_itoa(int n);
 int		ft_strlen(char *str);
-
 
 typedef struct s_bit
 {
