@@ -6,7 +6,7 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 13:14:28 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/15 17:36:21 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/16 01:38:09 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/minitalk.h"
@@ -35,12 +35,19 @@ void	encrypting(int pid, unsigned char *msg, int len)
 
 int	main(int ac, char **av)
 {
+	char	*client_pid;
+
+	client_pid = ft_itoa(getpid());
 	if (ac != 3)
 	{
 		ft_printf("Wrong number of arguments\n");
 		ft_printf("Typo is ./client PID MSG  \n");
 		return (0);
 	}
+	encrypting(ft_atoi(av[1]), (unsigned char *)client_pid, ft_strlen(client_pid));
+	usleep(50);
 	encrypting(ft_atoi(av[1]), (unsigned char *)av[2], ft_strlen(av[2]));
+	pause();
+	free(client_pid);
 	return (0);
 }

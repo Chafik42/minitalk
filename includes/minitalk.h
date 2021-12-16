@@ -6,7 +6,7 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 13:10:44 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/15 17:38:13 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/16 01:06:48 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,18 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-int	ft_atoi(const char *nptr);
-int	ft_strlen(char *str);
+int		ft_atoi(const char *nptr);
+char	*ft_itoa(int n);
+int		ft_strlen(char *str);
+
 
 typedef struct s_bit
 {
 	int					size;
 	wchar_t				c;
 	int					n;
+	int					end;
+	int					client_pid;
 }				t_bit;
 
 #endif
