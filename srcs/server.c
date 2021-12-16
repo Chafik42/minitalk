@@ -6,7 +6,7 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:58:26 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/16 02:28:31 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/16 15:12:37 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/minitalk.h"
@@ -54,6 +54,7 @@ void	decrypting(int bit)
 			g_bit.end = 0;
 			write(1, "\n", 1);
 			kill(g_bit.client_pid, SIGUSR2);
+			g_bit.client_pid = 0;
 		}
 		g_bit.c = 0;
 		g_bit.n = 1;
