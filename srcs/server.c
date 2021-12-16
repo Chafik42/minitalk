@@ -6,12 +6,12 @@
 /*   By: cmarouf <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:58:26 by cmarouf           #+#    #+#             */
-/*   Updated: 2021/12/16 01:41:17 by cmarouf          ###   ########.fr       */
+/*   Updated: 2021/12/16 02:28:31 by cmarouf          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../includes/minitalk.h"
 
-static t_bit g_bit;
+static t_bit	g_bit;
 
 void	binary_to_ascii(int bit)
 {
@@ -31,7 +31,7 @@ void	get_pid(int bit)
 	{
 		if (g_bit.c)
 		{
-			g_bit.client_pid *= 10; 
+			g_bit.client_pid *= 10;
 			g_bit.client_pid += (g_bit.c - 48);
 		}
 		if (!g_bit.c)
