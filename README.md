@@ -29,5 +29,9 @@ A pid will be shown, you will have copy it and paste it in another window while 
 
 > ./client (pid) "message"
 
+## Example
+
+![wqewqeqweeeeeeeeeeeeee](https://user-images.githubusercontent.com/76008303/160247671-2cfba916-58b3-4bce-ae77-350864749876.png)
+
 ## Note
 ![wqeqweqwe](https://user-images.githubusercontent.com/76008303/160246033-acfc7e15-a21f-43c5-bd57-39fb3bd244d8.png)
