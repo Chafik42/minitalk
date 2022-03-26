@@ -4,6 +4,14 @@ This project is an introduction of the Signal in the Unix environnement.
 
 It its a very usefull project, because it can create a lot of possibilites for future use.
 
+You have to make communicate a server, and a client, the server will receive the message of the client, and the goal is to receive the message as fast as possible.
+
+In the bonus you can make a ping pong implementation, the server will send a signal to client that he received the message.
+
+Another bonus is to handle emoji, the client will send an emoji as message, and the server will correcly display it.
+
+All of that is made possible by the signal and wait function, and a good skill on bitwise operation (some of the High school courses are usefull).
+
 ![wqeeeeqwe](https://user-images.githubusercontent.com/76008303/160245827-e7523879-b9f5-4e3d-8730-d305fb557fda.png)
 
 Full subject :
@@ -15,7 +23,7 @@ Full subject :
 > make
 > ./server
 
-A pid will be shown, you will have copy it and paste it in
+A pid will be shown, you will have copy it and paste it in another window while ./server is still running
 
 > ./client (pid) "message"
 
