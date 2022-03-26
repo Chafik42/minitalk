@@ -20,6 +20,8 @@ Full subject :
 
 ## Usage
 
+> For now it is only working on MAC OS
+
 > make
 > ./server
 
